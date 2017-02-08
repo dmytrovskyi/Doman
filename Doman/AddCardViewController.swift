@@ -12,44 +12,35 @@ import os.log
 class AddCardViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var lable: UITextField!
+    @IBOutlet weak var label: UITextField!
     
     @IBAction func save(_ sender: Any) {
-        let card = Card(lable.text!, image.image!)
-        saveCard(card)
+        guard let labelText = label.text else {
+            return
+        }
+        
+        guard let image = image.image else {
+            return
+        }
+        
+        CardService.saveCard(label: labelText, image: image)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }   
     
     
-    private func saveCard(_ card: Card) -> Bool {
-        
-        var cards = Utils.loadCards()
-        cards.append(card)
-        
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(cards, toFile: Settings.ArchiveURL.path)
-        if isSuccessfulSave {
-            os_log("Card successfully saved.", log: OSLog.default, type: .debug)
-        } else {
-            os_log("Failed to save card...", log: OSLog.default, type: .error)
-        }
-        
-        return isSuccessfulSave
-
-    }
     
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         
-        lable.resignFirstResponder()
+        label.resignFirstResponder()
         
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .photoLibrary

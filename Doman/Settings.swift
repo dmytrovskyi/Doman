@@ -11,6 +11,6 @@ import Foundation
 
 class Settings {
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("cards1")
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("cards2")
 
 }

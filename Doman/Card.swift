@@ -11,21 +11,22 @@ import os.log
 
 class Card: NSObject, NSCoding {
     var label: String
-    var image: UIImage
+    var imageUrl: URL
     
-    init(_ label: String, _ image: UIImage) {
+    
+    init(_ label: String, _ imageUrl: URL) {
         self.label = label.uppercased()
-        self.image = image
+        self.imageUrl = imageUrl
     }
     
     struct PropertyKey {
         static let label = "label"
-        static let image = "image"
+        static let imageUrl = "imageUrl"
     }
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(label, forKey: PropertyKey.label)
-        aCoder.encode(image, forKey: PropertyKey.image)
+        aCoder.encode(imageUrl, forKey: PropertyKey.imageUrl)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
@@ -34,11 +35,11 @@ class Card: NSObject, NSCoding {
             return nil
         }
         
-        guard let image = aDecoder.decodeObject(forKey: PropertyKey.image) as? UIImage else {
+        guard let imageUrl = aDecoder.decodeObject(forKey: PropertyKey.imageUrl) as? URL else {
             os_log("Unable to decode the Image for a Card object.", log: OSLog.default, type: .debug)
             return nil
         }
         
-        self.init(label, image)
+        self.init(label, imageUrl)
     }
 }

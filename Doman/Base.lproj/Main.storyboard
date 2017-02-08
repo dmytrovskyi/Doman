@@ -115,7 +115,7 @@
                     </view>
                     <connections>
                         <outlet property="image" destination="VPz-Oc-Z8O" id="sOM-TI-dSo"/>
-                        <outlet property="lable" destination="sVE-b3-Flt" id="LBE-GP-EpV"/>
+                        <outlet property="label" destination="sVE-b3-Flt" id="e21-Ew-i7i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arj-au-UDb" userLabel="First Responder" sceneMemberID="firstResponder"/>

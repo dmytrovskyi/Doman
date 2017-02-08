@@ -27,8 +27,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func playSet() {
-        playButton.isHidden = true
-        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(showCard), userInfo: nil, repeats: true)
+        playButton.isHidden = true        
+        showCard()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(showCard), userInfo: nil, repeats: true)
     }
     
     var count = 0
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
         label.sizeToFit()
         label.isHidden = false
         
-        image.image = card.image
+        image.image = UIImage(contentsOfFile: Settings.DocumentsDirectory.appendingPathComponent(card.label + ".jpg").path)
         image.isHidden = false
         
         count += 1

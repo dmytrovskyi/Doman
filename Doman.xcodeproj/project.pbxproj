@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		060F174E1E4A1E480099A0DB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F174D1E4A1E480099A0DB /* Utils.swift */; };
+		060F17501E4B4A820099A0DB /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F174F1E4B4A820099A0DB /* CardService.swift */; };
 		064C26AD1E433CDA0093A08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26AC1E433CDA0093A08A /* AppDelegate.swift */; };
 		064C26AF1E433CDA0093A08A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26AE1E433CDA0093A08A /* ViewController.swift */; };
 		064C26B21E433CDA0093A08A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064C26B01E433CDA0093A08A /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		060F174D1E4A1E480099A0DB /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		060F174F1E4B4A820099A0DB /* CardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		064C26A91E433CDA0093A08A /* Doman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		064C26AC1E433CDA0093A08A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		064C26AE1E433CDA0093A08A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				064C26B51E433CDA0093A08A /* LaunchScreen.storyboard */,
 				064C26B81E433CDA0093A08A /* Info.plist */,
 				064C26CE1E434C0A0093A08A /* Settings.swift */,
+				060F174F1E4B4A820099A0DB /* CardService.swift */,
 			);
 			path = Doman;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				064C26CD1E434A530093A08A /* Card.swift in Sources */,
 				064C26CF1E434C0A0093A08A /* Settings.swift in Sources */,
 				064C26AD1E433CDA0093A08A /* AppDelegate.swift in Sources */,
+				060F17501E4B4A820099A0DB /* CardService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
