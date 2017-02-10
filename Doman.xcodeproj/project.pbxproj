@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		060F174E1E4A1E480099A0DB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F174D1E4A1E480099A0DB /* Utils.swift */; };
 		060F17501E4B4A820099A0DB /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F174F1E4B4A820099A0DB /* CardService.swift */; };
+		060F17541E4C6E5E0099A0DB /* Slideshow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060F17531E4C6E5E0099A0DB /* Slideshow.storyboard */; };
+		060F17571E4C91CE0099A0DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F17561E4C91CE0099A0DB /* Category.swift */; };
+		060F175B1E4C96EB0099A0DB /* CategoriesListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F175A1E4C96EB0099A0DB /* CategoriesListCollectionViewController.swift */; };
+		060F175D1E4CAA260099A0DB /* CategoriesListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F175C1E4CAA260099A0DB /* CategoriesListCollectionViewCell.swift */; };
+		060F175F1E4CAC0E0099A0DB /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F175E1E4CAC0E0099A0DB /* CategoryService.swift */; };
+		060F17611E4DF57A0099A0DB /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F17601E4DF57A0099A0DB /* CardCollectionViewController.swift */; };
+		060F17631E4E08700099A0DB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F17621E4E08700099A0DB /* CardCollectionViewCell.swift */; };
 		064C26AD1E433CDA0093A08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26AC1E433CDA0093A08A /* AppDelegate.swift */; };
 		064C26AF1E433CDA0093A08A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26AE1E433CDA0093A08A /* ViewController.swift */; };
-		064C26B21E433CDA0093A08A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064C26B01E433CDA0093A08A /* Main.storyboard */; };
+		064C26B21E433CDA0093A08A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064C26B01E433CDA0093A08A /* Settings.storyboard */; };
 		064C26B41E433CDA0093A08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064C26B31E433CDA0093A08A /* Assets.xcassets */; };
-		064C26B71E433CDA0093A08A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064C26B51E433CDA0093A08A /* LaunchScreen.storyboard */; };
 		064C26C21E433CDA0093A08A /* DomanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26C11E433CDA0093A08A /* DomanTests.swift */; };
 		064C26CD1E434A530093A08A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26CC1E434A520093A08A /* Card.swift */; };
 		064C26CF1E434C0A0093A08A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C26CE1E434C0A0093A08A /* Settings.swift */; };
@@ -34,17 +40,23 @@
 /* Begin PBXFileReference section */
 		060F174D1E4A1E480099A0DB /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		060F174F1E4B4A820099A0DB /* CardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		060F17531E4C6E5E0099A0DB /* Slideshow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Slideshow.storyboard; sourceTree = "<group>"; };
+		060F17561E4C91CE0099A0DB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		060F175A1E4C96EB0099A0DB /* CategoriesListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesListCollectionViewController.swift; path = ../CategoriesListCollectionViewController.swift; sourceTree = "<group>"; };
+		060F175C1E4CAA260099A0DB /* CategoriesListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListCollectionViewCell.swift; sourceTree = "<group>"; };
+		060F175E1E4CAC0E0099A0DB /* CategoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		060F17601E4DF57A0099A0DB /* CardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewController.swift; sourceTree = "<group>"; };
+		060F17621E4E08700099A0DB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardCollectionViewCell.swift; path = ../CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		064C26A91E433CDA0093A08A /* Doman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		064C26AC1E433CDA0093A08A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		064C26AE1E433CDA0093A08A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		064C26B11E433CDA0093A08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		064C26B11E433CDA0093A08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		064C26B31E433CDA0093A08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		064C26B61E433CDA0093A08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		064C26B81E433CDA0093A08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		064C26BD1E433CDA0093A08A /* DomanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		064C26C11E433CDA0093A08A /* DomanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomanTests.swift; sourceTree = "<group>"; };
 		064C26C31E433CDA0093A08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		064C26CC1E434A520093A08A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		064C26CC1E434A520093A08A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Doman/Card.swift; sourceTree = "<group>"; };
 		064C26CE1E434C0A0093A08A /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		064C26D01E44CBE10093A08A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		064C26D21E44D1FD0093A08A /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060F17551E4C91880099A0DB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				064C26CC1E434A520093A08A /* Card.swift */,
+				060F17561E4C91CE0099A0DB /* Category.swift */,
+			);
+			name = Entity;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		064C26A01E433CDA0093A08A = {
 			isa = PBXGroup;
 			children = (
@@ -89,18 +111,23 @@
 		064C26AB1E433CDA0093A08A /* Doman */ = {
 			isa = PBXGroup;
 			children = (
+				060F17551E4C91880099A0DB /* Entity */,
 				064C26AC1E433CDA0093A08A /* AppDelegate.swift */,
 				064C26AE1E433CDA0093A08A /* ViewController.swift */,
 				060F174D1E4A1E480099A0DB /* Utils.swift */,
-				064C26B01E433CDA0093A08A /* Main.storyboard */,
+				064C26B01E433CDA0093A08A /* Settings.storyboard */,
+				060F17531E4C6E5E0099A0DB /* Slideshow.storyboard */,
+				060F175A1E4C96EB0099A0DB /* CategoriesListCollectionViewController.swift */,
+				060F175C1E4CAA260099A0DB /* CategoriesListCollectionViewCell.swift */,
+				060F17601E4DF57A0099A0DB /* CardCollectionViewController.swift */,
+				060F17621E4E08700099A0DB /* CardCollectionViewCell.swift */,
 				064C26D21E44D1FD0093A08A /* AddCardViewController.swift */,
 				064C26D01E44CBE10093A08A /* SettingsTableViewController.swift */,
-				064C26CC1E434A520093A08A /* Card.swift */,
 				064C26B31E433CDA0093A08A /* Assets.xcassets */,
-				064C26B51E433CDA0093A08A /* LaunchScreen.storyboard */,
 				064C26B81E433CDA0093A08A /* Info.plist */,
 				064C26CE1E434C0A0093A08A /* Settings.swift */,
 				060F174F1E4B4A820099A0DB /* CardService.swift */,
+				060F175E1E4CAC0E0099A0DB /* CategoryService.swift */,
 			);
 			path = Doman;
 			sourceTree = "<group>";
@@ -197,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				064C26B71E433CDA0093A08A /* LaunchScreen.storyboard in Resources */,
+				060F17541E4C6E5E0099A0DB /* Slideshow.storyboard in Resources */,
 				064C26B41E433CDA0093A08A /* Assets.xcassets in Resources */,
-				064C26B21E433CDA0093A08A /* Main.storyboard in Resources */,
+				064C26B21E433CDA0093A08A /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +248,13 @@
 				064C26D11E44CBE10093A08A /* SettingsTableViewController.swift in Sources */,
 				064C26D31E44D1FD0093A08A /* AddCardViewController.swift in Sources */,
 				060F174E1E4A1E480099A0DB /* Utils.swift in Sources */,
+				060F17631E4E08700099A0DB /* CardCollectionViewCell.swift in Sources */,
+				060F175B1E4C96EB0099A0DB /* CategoriesListCollectionViewController.swift in Sources */,
+				060F175F1E4CAC0E0099A0DB /* CategoryService.swift in Sources */,
+				060F17611E4DF57A0099A0DB /* CardCollectionViewController.swift in Sources */,
 				064C26CD1E434A530093A08A /* Card.swift in Sources */,
+				060F17571E4C91CE0099A0DB /* Category.swift in Sources */,
+				060F175D1E4CAA260099A0DB /* CategoriesListCollectionViewCell.swift in Sources */,
 				064C26CF1E434C0A0093A08A /* Settings.swift in Sources */,
 				064C26AD1E433CDA0093A08A /* AppDelegate.swift in Sources */,
 				060F17501E4B4A820099A0DB /* CardService.swift in Sources */,
@@ -247,20 +280,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		064C26B01E433CDA0093A08A /* Main.storyboard */ = {
+		064C26B01E433CDA0093A08A /* Settings.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				064C26B11E433CDA0093A08A /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		064C26B51E433CDA0093A08A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				064C26B61E433CDA0093A08A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

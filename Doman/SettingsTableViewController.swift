@@ -13,11 +13,25 @@ class SettingsTableViewController: UITableViewController {
     
     @IBOutlet weak var addCardCell: UITableViewCell!
     @IBOutlet weak var tsetCell: UITableViewCell!
+    @IBOutlet weak var backCell: UITableViewCell!
+    
+    @IBAction func backToSlideShow(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Slideshow", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier:  "Slideshow")
+//        if let appdelegate = UIApplication.shared.delegate as? AppDelegate {
+//            appdelegate.window?.rootViewController = vc
+//        }
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addCardCell.textLabel?.text = "Add Card"
+        addCardCell.textLabel?.text = "Categories and Cards"
         tsetCell.textLabel?.text = "Loren"
+        
+        //backCell.textLabel?.text = "Back"
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,7 +54,7 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
 
     /*

@@ -12,6 +12,7 @@ import os.log
 class Card: NSObject, NSCoding {
     var label: String
     var imageUrl: URL
+    var category: Category?
     
     
     init(_ label: String, _ imageUrl: URL) {

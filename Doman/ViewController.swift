@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         label.sizeToFit()
         label.isHidden = false
         
-        image.image = UIImage(contentsOfFile: Settings.DocumentsDirectory.appendingPathComponent(card.label + ".jpg").path)
+        image.image = UIImage(contentsOfFile: Settings.DocumentsDirectory.appendingPathComponent(card.label + Settings.imageFormat).path)
         image.isHidden = false
         
         count += 1
@@ -69,6 +69,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func switchToSettings(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
     }
 }
 
